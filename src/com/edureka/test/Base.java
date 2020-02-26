@@ -18,8 +18,8 @@ public class Base{
 	@Test(priority=1, dependsOnMethods = {"Login"})
 	public void SignUp() {
 		driver.findElement(By.linkText("Sign Up")).click();
-		driver.findElement(By.id("sg_popup_email")).sendKeys("tulikagetsmails@gmail.com");
-		driver.findElement(By.id("sg_popup_phone_no")).sendKeys("5087360342");
+		driver.findElement(By.id("sg_popup_email")).sendKeys("");
+		driver.findElement(By.id("sg_popup_phone_no")).sendKeys("");
 		driver.findElement(By.xpath("//button[@class='clik_btn_log btn-block signup-new-submit']")).click();
 		
 	}
@@ -27,8 +27,8 @@ public class Base{
 	public void Login() throws InterruptedException {
 		driver.findElement(By.linkText("Log In")).click();
 		//Thread.sleep(1000);
-		driver.findElement(By.xpath("//input[@id='si_popup_email']")).sendKeys("tulikagetsmails@gmail.com");
-		driver.findElement(By.xpath("//input[@id='si_popup_passwd']")).sendKeys("123456789");
+		driver.findElement(By.xpath("//input[@id='si_popup_email']")).sendKeys("");
+		driver.findElement(By.xpath("//input[@id='si_popup_passwd']")).sendKeys("");
 		driver.findElement(By.xpath("//button[@class='clik_btn_log btn-block']")).click();
 		//Browse all courses
        
